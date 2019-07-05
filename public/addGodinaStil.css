@@ -1,0 +1,201 @@
+h1 { 
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    }
+    body {
+        background: rgb(161, 90, 140);
+    }
+    
+    #meni ul {
+        padding-left: 2px;
+    }
+    #logo{
+        width: 70px; 
+        height: 55px;
+    }
+    #meni li {
+        padding-right: 25px;
+        display: inline;
+        list-style:none;
+    }
+   
+      p {
+        text-align: center;
+    }
+ #side {
+     position: absolute;
+     top: 20%;
+     width: 35%;
+     bottom: 10%;
+     left: 0%;
+     background: gray;
+    }
+
+ #glavniSadrzaj {
+    position: absolute;
+    top: 20%;
+    width: 65%;
+    bottom: 10%;
+    right: 0%;
+    background: darkgray;
+}
+
+#prva {
+    position: absolute;
+    left : 20%;
+    top: 10%;
+    width: 30%; 
+    height: 5%;
+    
+}
+
+#prvi {
+    position: absolute;
+    left : 20%;
+    top: 20%;
+    width: 60%; 
+    height: 5%;
+    border-radius: 10px;
+    
+}
+
+#druga {
+    position: absolute;
+    left : 20%;
+    top: 30%;
+    width: 40%; 
+    height: 5%;
+    
+}
+
+#drugi {
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    width: 60%; 
+    height: 5%;
+    font-size: 13px;
+    
+}
+
+#zadnji {
+    position: absolute;
+    right : 20%;
+    top: 80%;
+    bottom: 8%;
+    font-size: 16px;
+    height: 3%;
+    width: 17%;
+    
+}
+#ponistava {
+    position: absolute;
+    left : 20%;
+    top: 80%;
+    font-size: 13px;
+    bottom: 8%;
+    height: 4%;
+    width: 17%;
+    border-radius: 10px;
+
+    
+}
+
+#treca {
+    position: absolute;
+    left : 20%;
+    top: 50%;
+    width: 40%; 
+    height: 5%;
+    
+}
+
+#treci {
+    position: absolute;
+    left : 20%;
+    top: 60%;
+    width: 60%; 
+    height: 5%;
+    font-size: 13px;
+    
+}
+
+#godina {
+background: royalblue;
+width: 35%;
+height: 45%;
+
+}
+
+#lista{
+    display: inline;
+    margin: auto;
+    list-style-type: none;
+}
+#lista li{
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.godina{
+width: 150px;
+height: 150px;
+background-color: white;
+padding-left: 10px;
+padding-top: 10px;
+}
+.godina p{
+    text-align: center;
+}
+
+@media only screen and (max-width: 599px){
+
+    #header {
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    height: 30%;
+    
+    }
+    
+    #meni {
+        position: absolute;
+        top: 20%;
+        width: 100%;
+          }
+    
+        
+    #naziv {
+        position: absolute;
+        font-size: 20px;
+        top: 70%; 
+        left: 0%;
+        }
+
+        #glavniSadrzaj {
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            left: 0%;
+            height: 70%;
+            
+            }
+            #side {
+                position: absolute;
+                width: 100%;
+                top: 30%;
+                height: 70%;
+                
+                }
+
+        #footer {
+            position: absolute;
+            width: 100%;
+            top: 170%;
+            height: 20%;
+            
+          }
+
+
+        }

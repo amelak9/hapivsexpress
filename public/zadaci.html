@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="zadaciStil.css">
+<TITLE>Odabir vjezbe</TITLE>
+</HEAD>
+<BODY onload="new studentvjezbe(document.getElementById('imena'), document.getElementById('godina') )"> 
+    <div id="header">
+<h1 id = "naziv"> Odabir vježbe </h1>
+<img src="http://www.fullerton.edu/it/_resources/images/services_icons/graduation-cap-512.png" alt="kapa" id = "logo">
+<div id="meni">
+		<ul>
+                <li><a href="addGodina.html">Godine</a></li>
+                <li><a href="addStudent.html"> Dodavanje studenata </a></li>
+                <li><a href="studenti.html"> Pregled studenata</a></li>
+                <li><a href="addZadatak.html"> Dodavanje zadatka</a></li>
+                <li><a href="addVjezba.html"> Dodavanje vježbe/spirale</a></li>
+                <li><a href="zadaci.html"> Odabir vježbe</a></li>
+			</ul>
+	</div>
+    </div>
+
+	<div class = "cetvrtina" id = "hehe">
+<p>Godina<br></p>
+<select id = "godina">
+    </select>
+    <input type="submit" value = "OK" id = "dugme" onclick="vjezbeGodine(document.getElementById('godina'), document.getElementById('pola'))">
+  
+	
+    </div>
+
+    <div class = "cetvrtina" id = "haha">
+            <p>Student<br></p>
+            <select id = "imena">
+             </select>
+             <input type="submit" value = "OK" id = "dugme1" onclick="vjezbeStudent(document.getElementById('imena'), document.getElementById('pola'))">
+                </div>
+
+    <div class="polovina" id = "pola">
+
+      
+</div>
+    
+<SCRIPT src="studentvjezbe.js"></SCRIPT>
+<SCRIPT src="vjezbeStudent.js"></SCRIPT>
+<SCRIPT src="vjezbeGodine.js"></SCRIPT>
+
+
+</BODY>
+</HTML>

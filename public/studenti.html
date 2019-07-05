@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="studentiStil.css">
+<TITLE>Pregled studenata</TITLE>
+</HEAD>
+<BODY onload="new godinaselect(document.getElementById('listica') )"> 
+	<div id="header">
+<h1 id = "naziv"> Pregled studenata </h1>
+<img src="http://www.fullerton.edu/it/_resources/images/services_icons/graduation-cap-512.png" alt="kapa" id = "logo">
+<div id="meni">
+		<ul>
+			<li><a href="addGodina.html">Godine</a></li>
+			<li><a href="addStudent.html"> Dodavanje studenata </a></li>
+			<li><a href="studenti.html"> Pregled studenata</a></li>
+			<li><a href="addZadatak.html"> Dodavanje zadatka</a></li>
+			<li><a href="addVjezba.html"> Dodavanje vježbe/spirale</a></li>
+			<li><a href="zadaci.html"> Odabir vježbe</a></li>
+			</ul>
+	</div>
+	</div>
+
+	<div id="side">
+<p>Odabir godine:<br></p>
+<select id = "listica"></select>
+<input type="submit" value = "OK" id = "dugme" onclick="studentiAjax(document.getElementById('glavniSadrzaj'))">
+    </div>
+    <div id="glavniSadrzaj">
+            
+    </div>
+
+		
+		<SCRIPT src="Godineselect.js"></SCRIPT>
+		<SCRIPT src="studentiajax.js"></SCRIPT>
+
+
+</BODY>
+</HTML>

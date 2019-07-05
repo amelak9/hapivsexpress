@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">        
+<link rel="stylesheet" type="text/css" href="addVjezbaStil.css">
+<TITLE>Dodavanje vjezbe</TITLE>
+</HEAD>
+<BODY onload="new studentvjezbe(document.getElementById('unesi'), document.getElementById('drugi1'), document.getElementById('prvii'))"> 
+    <div id="header">
+<h1 id = "naziv"> Dodavanje vježbe/spirale </h1>
+<img src="http://www.fullerton.edu/it/_resources/images/services_icons/graduation-cap-512.png" alt="kapa" id = "logo">
+<div id="meni">
+		<ul>
+                <li><a href="addGodina.html">Godine</a></li>
+                <li><a href="addStudent.html"> Dodavanje studenata </a></li>
+                <li><a href="studenti.html"> Pregled studenata</a></li>
+                <li><a href="addZadatak.html"> Dodavanje zadatka</a></li>
+                <li><a href="addVjezba.html"> Dodavanje vježbe/spirale</a></li>
+                <li><a href="zadaci.html"> Odabir vježbe</a></li>
+			</ul>
+	</div>
+    </div>
+
+<div id = "sve">
+
+    <div id = "glavniSadrzaj">
+       
+
+        <div id = "zanovu">
+            <form name = "fNova" action = "http://localhost:8080/addVjezba" method="post">
+            <p>Nova vježba/spirala</p><br>
+            <label id = "prva1">Naziv vježbe</label><br>
+            <input id = "prvi1" type = "text" name = "sVjezbe" required><br>
+            <label id = "druga1">Godina</label><br>
+            <select id = "drugi1" name = "sGodine"></select><br>  
+            <label id = "omg">Student</label><br>
+            <select id = unesi name = "sIndex"></select><br>  
+                  <p id = "spirala"> <input type="checkbox" name="spirala" value="Spirala"> Spirala</p>
+                  <input id = "zadnji1" type="submit" value="Dodaj" onclick = "validiranje()">
+
+
+            </form>
+        </div>
+
+        <div id = "zapovezati">
+        <p>Poveži zadatak</p>
+        <form name = "fPoveziZadatak" action="http://localhost:8080/vjezba/:idVjezbe/zadatak" method="POST">
+            <p id = "jedan">Vježbe:</p><br>
+            <select name = "sVjezbe" id = "prvii" onclick="Veza(document.getElementById('drugii'))">
+             </select><br><br>
+            <p id = "dva">Zadaci:</p><br>
+            <select name = "sZadatak" id = "drugii">
+                
+            </select>
+            <input type="submit" name = "dZadatak" value = "Dodaj" id = "dugme" onclick="Pozovi(document.getElementById('prvii'), document.getElementById('drugii'))">
+        </form>
+    </div>
+
+    </div>
+
+</div>
+
+   
+
+        <div id = "mojDivPoruke"></div>
+    </div>
+
+    <SCRIPT src="addVjezba.js"></SCRIPT>
+    <SCRIPT src="validacija.js"></SCRIPT>
+    <SCRIPT src="Veza.js"></SCRIPT>
+    <SCRIPT src="Pozovi.js"></SCRIPT>
+    <SCRIPT src="studentvjezbe.js"></SCRIPT>
+
+
+</BODY>
+</HTML>

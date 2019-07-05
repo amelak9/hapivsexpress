@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<link rel="stylesheet" type="text/css" href="addGodinaStil.css">
+<TITLE>Godine</TITLE>
+</HEAD>
+<BODY onload="new GodineAjax(document.getElementById('glavniSadrzaj'))"> 
+    <div id="header">
+<h1 id = "naziv"> Dodavanje godine </h1>
+<img src="http://www.fullerton.edu/it/_resources/images/services_icons/graduation-cap-512.png" alt="kapa" id = "logo">
+<div id="meni">
+		<ul>
+                <li><a href="addGodina.html">Godine</a></li>
+                <li><a href="addStudent.html"> Dodavanje studenata </a></li>
+                <li><a href="studenti.html"> Pregled studenata</a></li>
+                <li><a href="addZadatak.html"> Dodavanje zadatka</a></li>
+                <li><a href="addVjezba.html"> Dodavanje vježbe/spirale</a></li>
+                <li><a href="zadaci.html"> Odabir vježbe</a></li>
+			</ul>
+	</div>
+    </div>
+
+<div id = "glavniSadrzaj">
+
+</div>
+
+
+    <div id = "side">
+      
+            <form action = "http://localhost:8080/addGodina" method="post">
+
+                <p>Unos godine</p><br>
+            <label id = "druga">Nazivi repozitorija vježbe</label><br>
+            <input id = "drugi" name="nazivRepVje" type="text" required><br>
+            <label id = "prva">Naziv godine</label><br>
+            <input id = "prvi" type = "text" name = "nazivGod" required>
+            <label id = "treca">Nazivi repozitorija spirale</label><br>
+            <input id = "treci" type = "text" name = "nazivRepSpi" required><br>
+       
+            
+                  <input id = "zadnji" type="submit" value="Unesi" onclick="validiranje()">
+                 <button id = "ponistava"> Poništi </button>
+                </form>
+
+        </div>
+
+
+    
+
+        <div id = "mojDivPoruke"></div>
+    </div>
+
+    <SCRIPT src="addGodina.js"></SCRIPT>
+    <SCRIPT src="validacija.js"></SCRIPT>
+    <SCRIPT src="GodineAjax.js"></SCRIPT>
+
+
+</BODY>
+</HTML>

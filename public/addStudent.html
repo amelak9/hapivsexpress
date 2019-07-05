@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">        
+<link rel="stylesheet" type="text/css" href="addStudentStil.css">
+<TITLE>Dodavanje studenta</TITLE>
+</HEAD>
+<BODY onload="new godinaselect(document.getElementById('cetvrti') )"> 
+    <div id="header">
+<h1 id = "naziv"> Dodavanje studenata </h1>
+<img src="http://www.fullerton.edu/it/_resources/images/services_icons/graduation-cap-512.png" alt="kapa" id = "logo">
+<div id="meni">
+		<ul>
+                <li><a href="addGodina.html">Godine</a></li>
+                <li><a href="addStudent.html"> Dodavanje studenata </a></li>
+                <li><a href="studenti.html"> Pregled studenata</a></li>
+                <li><a href="addZadatak.html"> Dodavanje zadatka</a></li>
+                <li><a href="addVjezba.html"> Dodavanje vježbe/spirale</a></li>
+                <li><a href="zadaci.html"> Odabir vježbe</a></li>
+			</ul>
+	</div>
+    </div>
+
+<div id = "sve">
+
+    <div id = "glavniSadrzaj">
+       
+        <div id = "zanovu">
+            <form action = "http://localhost:8080/addStudent" method="post">
+        <p id= "mali"></p>
+        <label id = "prva">Ime i prezime</label><br>
+            <input type = "text" id = "druga" name = "imeprezime"></select><br>
+            <label id = "drugi">Index</label><br>
+            <input type = "text" id = "treca" name = "index"></input><br>      
+            <label id = "cetvrta">Godina</label><br>
+            <select id = "cetvrti" name = "godina"></select><br>           
+            <input type="submit" value = "Dodaj" id = "treci"></input>
+            </form>
+        </div>
+
+
+    </div>
+
+</div>
+
+   
+
+        <div id = "mojDivPoruke"></div>
+    </div>
+
+    <SCRIPT src="addStudent.js"></SCRIPT>
+    <SCRIPT src="validacija.js"></SCRIPT>
+    <SCRIPT src="Godineselect.js"></SCRIPT>
+
+</BODY>
+</HTML>

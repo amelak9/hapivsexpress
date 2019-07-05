@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">       
+<link rel="stylesheet" type="text/css" href="addZadatakStil.css">
+<TITLE>Dodavanje zadatka</TITLE>
+</HEAD>
+<BODY> 
+    <div id="header">
+<h1 id = "naziv"> Dodavanje zadatka </h1>
+<img src="http://www.fullerton.edu/it/_resources/images/services_icons/graduation-cap-512.png" alt="kapa" id = "logo">
+<div id="meni">
+		<ul>
+                <li><a href="addGodina.html">Godine</a></li>
+                <li><a href="addStudent.html"> Dodavanje studenata </a></li>
+                <li><a href="studenti.html"> Pregled studenata</a></li>
+                <li><a href="addZadatak.html"> Dodavanje zadatka</a></li>
+                <li><a href="addVjezba.html"> Dodavanje vježbe/spirale</a></li>
+                <li><a href="zadaci.html"> Odabir vježbe</a></li>
+			</ul>
+	</div>
+    </div>
+
+<div id = "sve">
+
+    <div id = "glavniSadrzaj">
+        <div id = "zaformu">
+
+            <form id = "noviZadatak" action="http://localhost:8080/addZadatak" method = "post" enctype="multipart/form-data">
+
+            <p>Novi zadatak</p><br>
+            <label id = "prva">Naziv zadatka</label><br>
+            <input id = "prvi" type = "text" name = "naziv" required><br>
+            <label id = "druga">Tekst postavke</label><br>
+            <input id = "drugi" type="file" name="postavka" required><br>
+
+    
+
+                  <input id = "zadnji" type="submit" value="Dodaj" onclick = "validiranje()">
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+  
+        <div id = "mojDivPoruke"></div>
+        
+    </div>
+
+    <SCRIPT src="addZadatak.js"></SCRIPT>
+    <SCRIPT src="validacija.js"></SCRIPT>
+
+</BODY>
+</HTML>
